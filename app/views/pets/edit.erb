@@ -13,7 +13,7 @@
 
   <br></br>
 
-  <%Owner.all.each do |owner|%>
+  <%Pet.all.each do |pet|%>
     <input type="checkbox" name="owner[name]" value="<%=owner.id%>" id="<%=owner.id%>" <%='checked' if @pet.owner.id == owner.id %>><%=owner.id%></input>
   <%end%>
 
